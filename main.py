@@ -9,8 +9,8 @@ def send_welcome(message):
     bot.reply_to(message, f'Привет! Я бот который рассказывает о проблемах экологии и их решениях ')
 
 
-@bot.message_handler(commands=['info'])
-def send_info(message):
+@bot.message_handler(commands=['help'])
+def send_help(message):
     bot.reply_to(message, 'Комманды: /problems -  рассказывает о проблемах. /decision - рассказывает о решениях вышепредоставленных проблем')
 
 
